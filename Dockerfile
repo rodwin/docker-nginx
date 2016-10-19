@@ -1,5 +1,5 @@
-FROM maxexcloo/debian:latest
-MAINTAINER Max Schaefer <max@excloo.com>
+FROM rodwin/ubuntu:latest
+MAINTAINER Rodwin Lising <rodwinlising@gmail.com>
 RUN curl https://nginx.org/keys/nginx_signing.key | apt-key add - && \
 	echo "deb http://nginx.org/packages/debian/ jessie nginx" > /etc/apt/sources.list.d/nginx.list && \
 	apt-get update && \
